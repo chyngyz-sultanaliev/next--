@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import sass from "./Product.module.scss";
+import Image from "next/image";
 interface Data {
   _id: string;
   name: string;
@@ -34,7 +35,7 @@ const Product = () => {
       <div className={sass.product}>
         {data?.map((el) => (
           <div className={sass.product_card}>
-            <img src={el.url} alt={el.name} />
+            <Image src={el.url} alt={el.name} />
             <div className={sass.product_card_item}>
               <h1>{el.name}</h1>
               <h2>{el.price}</h2>
