@@ -1,0 +1,12 @@
+.header {
+  padding: 20px 0;
+  background: white;
+}
+.header_nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  a {
+    font-size: 25px;
+  }
+}
